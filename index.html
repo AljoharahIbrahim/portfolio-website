@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+
+</head>
+<body>
+    <main>
+        <nav>
+            <ul><a href="#home-section">Home</a></ul>
+            <ul><a href="#projects-section">Projects</a></ul>
+            <ul><a href="#skills-section">Skills</a></ul>
+            <ul><a href="#experience-section">Experience</a></ul>
+            <ul><a href="#contact-section">Contact</a></ul>
+        </nav>
+        <!-- Content Sections -->
+        <section name="content-section">
+            <!-- Home/About Section -->
+            <section id="home-section">
+                <header>
+                    <h1>
+                        Hi, my name is Aljohara
+                    </h1>
+                </header>
+                <img src="pexels-maksgelatin-9871907.jpg" alt="this is profile image" width="200" height="200">
+            </section>
+            <hr>
+            <!-- Projects Section -->
+            <section id="projects-section">
+                <h2>Projects</h2>
+                <img src="pexels-maksgelatin-9871907.jpg" alt="this is image for project1" width="200" height="200">
+                <h3>project1</h3>
+                <p>decription</p>
+                <img src="pexels-maksgelatin-9871907.jpg" alt="this is image for project2" width="200" height="200">
+                <h3>project2</h3>
+                <p>decription</p>
+            </section>
+            <hr>
+            <!--  Skills Section -->
+            <section id="skills-section">
+                <h2>Skills</h2>
+                <ul>
+                    <li> Skill:
+                    </li>
+                    <li>
+                        Skill:
+                    </li>
+                </ul>
+            </section>
+            <hr>
+            <!-- Experience Section -->
+            <section id="experience-section">
+                <h2>Experience</h2>
+                <h3> Experience1</h3>
+                <h4>Title</h4>
+                <p>decription</p>
+                <h3> Experience2</h3>
+                <h4>Title</h4>
+                <p>decription</p>
+                <h3> Experience3</h3>
+                <h4>Title</h4>
+                <p>decription</p>
+            </section>
+            <hr>
+            <!-- Contact Section -->
+            <section id="contact-section">
+                <h2>Contact</h2>
+                <h3>Contact me with email:</h3>
+                <strong>jalahaydeb@gmail.com</strong><br><br>
+                <form id="my-form" action="https://formspree.io/f/mldervnr" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="enter your name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="enter your email" required><br><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="enter your phone"><br><br>
+                    <label for="webpage">Website:</label>
+                    <input type="url" name="webpage" id="webpage" placeholder="enter your url"><br><br>
+                    <label for="message">Message:</label> <br>
+                    <textarea name="message" id="message" required></textarea> <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
