@@ -1,0 +1,246 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+/* variables */
+:root {
+    --main-color: cadetblue;
+    --secondary-color: antiquewhite;
+    --text-color: darkblue;
+    --highlight-color: azure;
+    --hover-color: rgb(52, 49, 49);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* nav tag */
+nav {
+    background-color: var(--main-color);
+    font-size: large;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    margin-bottom: 0.313rem;
+    padding: 0.625rem;
+    width: 100%;
+}
+
+nav a {
+    color: var(--highlight-color);
+    padding: 0.625rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--hover-color);
+
+}
+
+/* h2,h3 */
+h2 {
+    margin-top: 0.938rem;
+    text-align: center;
+    color: var(--text-color);
+    text-transform: uppercase;
+    padding: 1.25rem;
+}
+
+h3 {
+    padding: 1.25rem;
+}
+
+/* home-section */
+#home-section {
+    background-image: url(./image/photo-1478760329108-5c3ed9d495a0.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: var(--highlight-color);
+    padding: 2rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.home-item {
+    padding: 20px;
+    margin: 2em;
+    text-align: left;
+}
+
+.home-item p {
+    display: block;
+    padding-left: 5em;
+    line-height: 2;
+    text-align: justify;
+}
+
+#home-section h2 {
+    color: azure;
+}
+
+#home-section strong {
+    color: antiquewhite;
+}
+
+.fa-code {
+    font-size: 3rem;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    color: var(--main-color);
+    opacity: 0.3;
+}
+
+.icon-image {
+    width: 360px;
+    height: 360px;
+    margin-left: 40px;
+    border-radius: 30em;
+    opacity: 0.2;
+}
+
+/* projects-section */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 40px;
+    margin: 40px;
+}
+
+.project-card {
+    background-color: var(--highlight-color);
+    padding: 1rem;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: scale(1.06);
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+/* skills-section */
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: 60px;
+}
+
+.skills-card {
+    background-color: var(--highlight-color);
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    border-left-style: double;
+    border-width: 15px;
+    border-color: var(--main-color);
+    font-size: larger;
+}
+
+#skills-section {
+    background-color: var(--main-color);
+    padding: 20px;
+    margin-top: 150px;
+}
+
+/* experience-section */
+#experience-section {
+    background-color: var(--secondary-color);
+    padding-top: 1em;
+    padding-bottom: 5em;
+    color: var(--hover-color);
+}
+
+#experience-section h4 {
+    padding-left: 1em;
+    color: var(--secondary-color);
+}
+
+/* other tags */
+textarea,
+input {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+.button {
+    color: rgb(255, 255, 255);
+    background-color: var(--main-color);
+    width: 100%;
+}
+
+label {
+    margin-bottom: 0.313rem;
+    padding-bottom: 0.625rem;
+}
+
+/* contact-section */
+#contact-section {
+    margin: 10em;
+}
+
+
+/* responsive*/
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home-item {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-item h2 {
+        margin-top: 10px 0;
+        position: fixed;
+    }
+
+}
